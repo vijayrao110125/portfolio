@@ -17,7 +17,7 @@ import {
   ListIcon,
   // Button,
   // ButtonGroup,
-  Center,
+  //Center,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Fade } from "react-reveal";
