@@ -1,19 +1,18 @@
 ## Site Name
-- Portable Portfolio
+- Vijay's Portfolio
 
 ## Header
-- Hi, my name is Eldora. 
-- I'm a software engineer.
+- Hi, my name is Vijay. 
+- I'm a Grad Student @ UFL
 - Short Description Here.
 
 ## About
-Write your "About" section here.
+I am Vijay Thakkallapally, a graduate student at the University of Florida with extensive software engineering experience in Java, Python, and full-stack development. I have a proven track record of enhancing HR software functionality and developing impactful machine learning projects, demonstrating my ability to drive technological innovation and efficiency.
 
 ## Contact
-Write your "Contact" section here.
-- LinkedIn: https://linkedin.com/in/username
-- GitHub: https://github.com/username
-- Email: username@gmail.com
+- LinkedIn: https://www.linkedin.com/in/vijay-thakkallapally-748566188
+- GitHub: https://github.com/vijayrao110125
+- Email: thakkallapallyv@gmail.com
 
 ## Logo
-- EB
+- VT

@@ -1,29 +1,31 @@
-## Company 1
-- *Role* | Jan'23 - Feb'23
-- ![logo512](../assets/logo512.png)
+## University Of Florida
+- *Graduate Research Assistant* | Apr'23 - Present
+- ![logo512](../assets/gator.jpeg)
 - Tags: Category 1
 - Badges:
-  - Badge [blue]
+  - Research [blue]
 - List Items:
-  - Point 1
-  - Point 2
+  - Led the development of advanced crop modeling techniques under Dr. Charlie Messina’s mentorship, utilizing sophisticated tools like Easy Pheno Optimizer and NelderMead Optimizer to refine predictive accuracy.
+  - Significantly enhanced crop yield predictions, achieving a 12% improvement in accuracy through advanced Python programming and comprehensive analysis of crop interactions with varying weather conditions and soil types.
+  - Pioneered the implementation of innovative crop management strategies, leading to a 20% increase in agricultural yields by optimizing botanical characteristics tailored to specific environmental conditions.
 
-## Company 2
-- *Role* | Feb'23 - Mar'23
-- ![logo512](../assets/logo512.png)
+## Darwinbox Digital Solutions PVT LTD
+- *Software Development Engineer* | May'22 - Nov'22
+- ![logo512](../assets/darwinbox.png)
 - Tags: Category 2
 - Badges:
-  - Badge [blue]
+  - Full Time [blue]
 - List Items:
-  - Point 1
-  - Point 2
+  - Served as a key full-stack developer, enhancing and maintaining the company’s HR software using Node.js and Java. Led both front-end and back-end developments, collaborating effectively within a cross-functional team to achieve a 20% improvement in application functionality and customer experience.
+  - Designed and executed comprehensive unit testing scenarios using Java, leading to a 30% increase in code coverage. This initiative significantly enhanced the robustness and reliability of the codebase.
+  - Drove cross-functional collaboration by actively participating in ideation sessions, performing detailed market research, and supporting the formulation and execution of product strategies using insights developed through Java and Node.js applications.Contributed substantially to the development and implementation of strategies, boosting efficiency by 15%.
 
-## Company 3
-- *Role* | Mar'23 - Apr'23
-- ![logo512](../assets/logo512.png)
+## Darwinbox Digital Solutions PVT LTD
+- *Product Development Intern* | Jan'22 - May'22
+- ![logo512](../assets/darwinbox.png)
 - Tags: Category 3
 - Badges:
-  - Badge [blue]
+  - Internship [blue]
 - List Items:
-  - Point 1
-  - Point 2
+  - Played a pivotal role in product creation as a Product Development Specialist, actively engaged in every stage from concept to market launch. Designed initiatives that accelerated development timelines by 15%, through the implementation of innovative solutions.
+  - Gained extensive experience in software lifecycle management, leading efforts to enhance product features and ensure alignment with market demands. These strategic enhancements led to an increase 25% in efficiency and market competitiveness
