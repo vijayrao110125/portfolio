@@ -5,7 +5,7 @@ const parseProfile = (mdContent) => {
     siteName: "",
     headerName: "",
     headerRole: "",
-    headerDesc: "hi iam vijay rao",
+    headerDesc: "",
     about: "",
     contact: "",
     linkedin: "",
@@ -21,7 +21,6 @@ const parseProfile = (mdContent) => {
 
     if (line.startsWith("## ")) {
       const section = line.substr(3).trim();
-
       switch (section) {
         case "Header":
           profile.headerName = lines[++i].substr(2).trim();
@@ -35,7 +34,7 @@ const parseProfile = (mdContent) => {
           profile.contact = lines[++i].trim();
           const contactLinks = ["LinkedIn", "GitHub", "Email"];
           for (const link of contactLinks) {
-            const linkLine = lines[++i].substr(2).trim();
+            const linkLine = lines[i++].substr(2).trim();
             if (linkLine.startsWith(link)) {
               profile[link.toLowerCase()] = linkLine.split(": ")[1].trim();
             }
@@ -44,13 +43,15 @@ const parseProfile = (mdContent) => {
         case "Logo":
           profile.logo = lines[++i].substr(2).trim();
           break;
+        case "Site Name":
+          profile.siteName = lines[++i].substr(2).trim();
+          break;
         default:
           // do nothing
           break;
       }
     }
   }
-
   return profile;
 };
 
@@ -83,7 +84,6 @@ const ProfileArray = () => {
         console.error("Error fetching markdown content:", error);
       });
   }, []);
-
   return profile;
 };
 

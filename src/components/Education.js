@@ -58,8 +58,8 @@ export default function Education({ color }) {
             </HStack>
             <Divider orientation="horizontal" />
           </Stack>
-          <Center px={4}>
-            {/* <ButtonGroup variant="outline">
+          {/* <Center px={4}>
+            <ButtonGroup variant="outline">
               {options.map((option) => (
                 <Button
                   colorScheme={selected === option.value ? `${color}` : "gray"}
@@ -68,8 +68,8 @@ export default function Education({ color }) {
                   {option.value}
                 </Button>
               ))}
-            </ButtonGroup> */}
-          </Center>
+            </ButtonGroup>
+          </Center> */}
           <Stack px={4} spacing={4}>
             {education
               .filter((exp) => exp.tags.includes(selected))
