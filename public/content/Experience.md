@@ -1,7 +1,7 @@
 ## University Of Florida
 - *Graduate Research Assistant* | Apr'23 - Present
 - ![logo512](../assets/gator.jpeg)
-- Tags: Category 1
+- Tags: Research
 - Badges:
   - Research [blue]
 - List Items:
@@ -12,7 +12,7 @@
 ## Darwinbox Digital Solutions PVT LTD
 - *Software Development Engineer* | May'22 - Nov'22
 - ![logo512](../assets/darwinbox.png)
-- Tags: Category 2
+- Tags: Full Time
 - Badges:
   - Full Time [blue]
 - List Items:
@@ -23,7 +23,7 @@
 ## Darwinbox Digital Solutions PVT LTD
 - *Product Development Intern* | Jan'22 - May'22
 - ![logo512](../assets/darwinbox.png)
-- Tags: Category 3
+- Tags: Internship
 - Badges:
   - Internship [blue]
 - List Items:

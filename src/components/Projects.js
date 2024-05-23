@@ -15,7 +15,12 @@ import {
   Badge,
   Link,
   Center,
+  Flex,
+  List,
+  ListItem,
+  ListIcon,
 } from "@chakra-ui/react";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 import { Fade } from "react-reveal";
 import { useState } from "react";
 import ProjectsArray from "./ProjectsArray";
@@ -63,13 +68,28 @@ export default function Projects({ color }) {
                     }}
                     overflow="hidden"
                   >
-                    <Image objectFit="cover" src={project.image} />
+                    <Image height="250px" objectFit="cover" src={project.image} />
 
-                    <Stack>
+                    <Stack >
                       <CardBody align="left">
                         <Heading size="md">{project.name}</Heading>
-
-                        <Text py={2}>{project.description}</Text>
+                        <CardBody>
+                          <Flex>
+                            <List align="left" spacing={3}>
+                              {project.descriptionItems.map((item, index) => (
+                                <ListItem key={index}>
+                                  <ListIcon
+                                    boxSize={6}
+                                    as={ChevronRightIcon}
+                                    color={`${color}.500`}
+                                  />
+                                  {item}
+                                </ListItem>
+                              ))}
+                            </List>
+                          </Flex>
+                        </CardBody>
+                        {/* <Text py={2}>{project.description}</Text> */}
 
                         <HStack py={2}>
                           {project.buttons.map((button) => (

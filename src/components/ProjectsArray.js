@@ -15,6 +15,7 @@ const parseProjects = (mdContent) => {
       const tags = lines[++i].split(":")[1].trim();
       const badges = [];
       const buttons = [];
+      const descriptionItems=[];
 
       while (lines[++i] && !lines[i].startsWith("- Badges:")) {}
       while (lines[++i] && lines[i].startsWith("  - ")) {
@@ -31,6 +32,10 @@ const parseProjects = (mdContent) => {
         buttons.push({ text: buttonText, href: buttonHref });
       }
 
+      while (lines[++i] && lines[i].startsWith("  - ")) {
+        descriptionItems.push(lines[i].substr(4));
+      }
+
       projects.push({
         name,
         description,
@@ -38,6 +43,7 @@ const parseProjects = (mdContent) => {
         tags: [tags],
         badges,
         buttons,
+        descriptionItems
       });
     }
   }
