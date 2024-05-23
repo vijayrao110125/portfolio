@@ -1,6 +1,6 @@
 ## Project 1
 Description
-- Tags: Category 1
+- Tags: Web Development
 - Badges:
   - Badge [blue]
 - Buttons:
@@ -8,7 +8,7 @@ Description
 
 ## Project 2
 Description
-- Tags: Category 2
+- Tags: Machine Learning
 - Badges:
   - Badge [blue]
 - Buttons:

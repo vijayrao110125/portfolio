@@ -19,10 +19,17 @@ export default function Header({ color }) {
   };
   const linkedin = () => {
     window.open(
-                `${profile.linkedin}`,
-                "_blank",
-                "noreferrer,noopener"
-              );
+      `${profile.linkedin}`,
+      "_blank",
+      "noreferrer,noopener"
+    );
+  };
+  const Resume = () => {
+    window.open(
+      "/assets/vijay_resume.pdf",
+      "_blank",
+      "noreferrer,noopener"
+    );
   };
   return (
     <>
@@ -83,6 +90,18 @@ export default function Header({ color }) {
               onClick={scrollToContact}
             >
               Contact Me
+            </Button>
+            <Button
+              colorScheme={color}
+              bg={`${color}.400`}
+              rounded={"full"}
+              px={6}
+              _hover={{
+                bg: `${color}.500`,
+              }}
+              onClick={Resume}
+            >
+              View Resume
             </Button>
             <Box>
               <Icon

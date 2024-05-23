@@ -1,7 +1,7 @@
 ## GatorChefs
 Description
 - ![600x200](../assets/gatorchefs.png)
-- Tags: Category 1
+- Tags: Web Development
 - Badges:
   - ReactJs, NodeJs, MongoDB, CloudFlare, OpenAI [blue]
 - Buttons:
@@ -13,7 +13,7 @@ Description
 ## Shopping Through Live Streaming
 Description
 - ![600x200](../assets/shopping.png)
-- Tags: Category 2
+- Tags: Web Development
 - Badges:
   - Java, WebRtc, XML, PHP [blue]
 - Buttons:
@@ -25,7 +25,7 @@ Description
 ## GatorTaxi
 Description
 - ![600x200](../assets/ride.jpeg)
-- Tags: Category 3
+- Tags: Web Development
 - Badges:
   - C++, bash, Hipergator [blue]
 - Buttons:
@@ -38,7 +38,7 @@ Description
 ## Android Malware Detection
 Description
 - ![600x200](../assets/malware-android.jpg)
-- Tags: Category 3
+- Tags: Machine Learning
 - Badges:
   - Python, Flask, Keras, TensorFlow [blue]
 - Buttons:

@@ -32,8 +32,12 @@ export default function Projects({ color }) {
   const others = OtherProjectsArray();
   const options = TagsArray("ProjectsTags");
 
-  const [selected, setSelected] = useState("All");
+  const [selected, setSelected] = useState("Web Development");
+  const [otherSelected, otherSetSelected] = useState("All");
 
+  const handleOtherSelected = (value) => {
+    otherSetSelected(value);
+  };
   const handleSelected = (value) => {
     setSelected(value);
   };
@@ -56,10 +60,28 @@ export default function Projects({ color }) {
             </HStack>
             <Divider orientation="horizontal" />
           </Stack>
-
+          <Center px={4}>
+            <ButtonGroup variant="outline">
+              {options.map((option) => (
+                <Button
+                  colorScheme={selected === option.value ? `${color}` : "gray"}
+                  onClick={() => handleSelected(option.value)}
+                >
+                  {option.value}
+                </Button>
+              ))}
+            </ButtonGroup>
+          </Center>
           <SimpleGrid rows={[1, 2]} px={4} spacing={4}>
             <Stack px={4} spacing={4}>
-              {projects.map((project) => (
+              {projects
+              .filter((other) => {
+                if (selected === "All") {
+                  return true;
+                } else {
+                  return other.tags.includes(selected);
+                }
+              }).map((project) => (
                 <Fade bottom>
                   <Card
                     key={project.name}
@@ -123,15 +145,15 @@ export default function Projects({ color }) {
           <Center px={4}>
             <ButtonGroup variant="outline">
               <Button
-                colorScheme={selected === "All" ? `${color}` : "gray"}
-                onClick={() => handleSelected("All")}
+                colorScheme={otherSelected === "All" ? `${color}` : "gray"}
+                onClick={() => handleOtherSelected("All")}
               >
                 All
               </Button>
               {options.map((option) => (
                 <Button
-                  colorScheme={selected === option.value ? `${color}` : "gray"}
-                  onClick={() => handleSelected(option.value)}
+                  colorScheme={otherSelected === option.value ? `${color}` : "gray"}
+                  onClick={() => handleOtherSelected(option.value)}
                 >
                   {option.value}
                 </Button>
@@ -141,10 +163,10 @@ export default function Projects({ color }) {
           <SimpleGrid columns={[1, 2, 3]} px={4} spacing={4}>
             {others
               .filter((other) => {
-                if (selected === "All") {
+                if (otherSelected === "All") {
                   return true;
                 } else {
-                  return other.tags.includes(selected);
+                  return other.tags.includes(otherSelected);
                 }
               })
               .map((other) => (
