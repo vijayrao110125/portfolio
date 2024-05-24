@@ -139,7 +139,7 @@ export default function Projects({ color }) {
                 ))}
             </Stack>
           </SimpleGrid>
-          <Text color={"gray.100"} fontSize={"xl"} px={4}>
+          <Text id='playstoreapps' color={"gray.100"} fontSize={"xl"} px={4}>
             Google Playstore Apps
           </Text>
           {/* <Center px={4}>

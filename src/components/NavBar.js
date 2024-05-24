@@ -53,6 +53,10 @@ export default function Nav({ color }) {
     const projectsSection = document.querySelector("#projects");
     projectsSection.scrollIntoView({ behavior: "smooth" });
   };
+  const scrollToPlayStoreApps = () => {
+    const projectsSection = document.querySelector("#playstoreapps");
+    projectsSection.scrollIntoView({ behavior: "smooth" });
+  };
   const scrollToEducation = () => {
     const projectsSection = document.querySelector("#education");
     projectsSection.scrollIntoView({ behavior: "smooth" });
@@ -113,6 +117,9 @@ export default function Nav({ color }) {
                 </Button>
                 <Button variant="ghost" onClick={scrollToProjects}>
                   Projects
+                </Button>
+                <Button variant="ghost" onClick={scrollToPlayStoreApps}>
+                  PlayStore Apps
                 </Button>
                 <Button variant="ghost" onClick={scrollToContact}>
                   Contact
