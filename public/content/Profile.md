@@ -12,7 +12,6 @@ I am Vijay Thakkallapally, a Master’s student in Computer Science at the Unive
 - LinkedIn: https://www.linkedin.com/in/vijaythakkallapally
 - GitHub: https://github.com/vijayrao110125
 - Email: thakkallapallyv@gmail.com
-- Resume: 
 
 ## Logo
 - VT

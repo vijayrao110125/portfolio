@@ -1,23 +1,25 @@
-## Project 1
-Description
+## Video Downloader 2024
+Video downloader for all social media apps
+- ![600x200](../assets/logo.jpg)
 - Tags: Web Development
 - Badges:
-  - Badge [blue]
+  - Android App [blue]
 - Buttons:
-  - Link [https://example.com]
+  - Link [https://play.google.com/store/apps/details?id=com.thetechie.statussaver]
 
-## Project 2
-Description
-- Tags: Machine Learning
+## Video Downloader 2024
+Video downloader for social media
+- ![600x200](../assets/logo2.jpeg)
+- Tags: Web Development
 - Badges:
-  - Badge [blue]
+  - Android App [blue]
 - Buttons:
-  - Link [https://example.com]
+  - Link [https://play.google.com/store/apps/details?id=com.gator.statussaver]
 
-## Project 3
+<!-- ## Project 3
 Description
 - Tags: Category 3
 - Badges:
   - Badge [blue]
 - Buttons:
-  - Link [https://example.com]
+  - Link [https://example.com] -->

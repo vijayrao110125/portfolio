@@ -13,7 +13,7 @@ import {
   Heading,
   SimpleGrid,
   Badge,
-  Link,
+  //Link,
   Center,
   Flex,
   List,
@@ -33,11 +33,11 @@ export default function Projects({ color }) {
   const options = TagsArray("ProjectsTags");
 
   const [selected, setSelected] = useState("Web Development");
-  const [otherSelected, otherSetSelected] = useState("All");
+  //const [otherSelected, otherSetSelected] = useState("All");
 
-  const handleOtherSelected = (value) => {
-    otherSetSelected(value);
-  };
+  // const handleOtherSelected = (value) => {
+  //   otherSetSelected(value);
+  // };
   const handleSelected = (value) => {
     setSelected(value);
   };
@@ -75,74 +75,74 @@ export default function Projects({ color }) {
           <SimpleGrid rows={[1, 2]} px={4} spacing={4}>
             <Stack px={4} spacing={4}>
               {projects
-              .filter((other) => {
-                if (selected === "All") {
-                  return true;
-                } else {
-                  return other.tags.includes(selected);
-                }
-              }).map((project) => (
-                <Fade bottom>
-                  <Card
-                    key={project.name}
-                    direction={{
-                      base: "column",
-                    }}
-                    overflow="hidden"
-                  >
-                    <Image height="250px" objectFit="cover" src={project.image} />
+                .filter((other) => {
+                  if (selected === "All") {
+                    return true;
+                  } else {
+                    return other.tags.includes(selected);
+                  }
+                }).map((project) => (
+                  <Fade bottom>
+                    <Card
+                      key={project.name}
+                      direction={{
+                        base: "column",
+                      }}
+                      overflow="hidden"
+                    >
+                      <Image height="250px" objectFit="cover" src={project.image} />
 
-                    <Stack >
-                      <CardBody align="left">
-                        <Heading size="md">{project.name}</Heading>
-                        <CardBody>
-                          <Flex>
-                            <List align="left" spacing={3}>
-                              {project.descriptionItems.map((item, index) => (
-                                <ListItem key={index}>
-                                  <ListIcon
-                                    boxSize={6}
-                                    as={ChevronRightIcon}
-                                    color={`${color}.500`}
-                                  />
-                                  {item}
-                                </ListItem>
-                              ))}
-                            </List>
-                          </Flex>
+                      <Stack >
+                        <CardBody align="left">
+                          <Heading size="md">{project.name}</Heading>
+                          <CardBody>
+                            <Flex>
+                              <List align="left" spacing={3}>
+                                {project.descriptionItems.map((item, index) => (
+                                  <ListItem key={index}>
+                                    <ListIcon
+                                      boxSize={6}
+                                      as={ChevronRightIcon}
+                                      color={`${color}.500`}
+                                    />
+                                    {item}
+                                  </ListItem>
+                                ))}
+                              </List>
+                            </Flex>
+                          </CardBody>
+                          {/* <Text py={2}>{project.description}</Text> */}
+
+                          <HStack py={2}>
+                            {project.buttons.map((button) => (
+                              <a key={button.text} href={button.href} target="_blank" rel="noopener noreferrer">
+                                <Button color={`${color}.400`}>
+                                  {button.text}
+                                </Button>
+                              </a>
+                            ))}
+                          </HStack>
+                          <HStack pt={4} spacing={2}>
+                            {project.badges.map((badge) => (
+                              <Badge
+                                key={badge.text}
+                                colorScheme={badge.colorScheme}
+                              >
+                                {badge.text}
+                              </Badge>
+                            ))}
+                          </HStack>
                         </CardBody>
-                        {/* <Text py={2}>{project.description}</Text> */}
-
-                        <HStack py={2}>
-                          {project.buttons.map((button) => (
-                            <a key={button.text} href={button.href}>
-                              <Button color={`${color}.400`}>
-                                {button.text}
-                              </Button>
-                            </a>
-                          ))}
-                        </HStack>
-                        <HStack pt={4} spacing={2}>
-                          {project.badges.map((badge) => (
-                            <Badge
-                              key={badge.text}
-                              colorScheme={badge.colorScheme}
-                            >
-                              {badge.text}
-                            </Badge>
-                          ))}
-                        </HStack>
-                      </CardBody>
-                    </Stack>
-                  </Card>
-                </Fade>
-              ))}
+                      </Stack>
+                    </Card>
+                  </Fade>
+                ))}
             </Stack>
           </SimpleGrid>
-          <Text color={"gray.600"} fontSize={"xl"} px={4}>
-            Other Projects
+          <Text color={"gray.100"} fontSize={"xl"} px={4}>
+            Google Playstore Apps
           </Text>
-          <Center px={4}>
+          {/* <Center px={4}>
             <ButtonGroup variant="outline">
               <Button
                 colorScheme={otherSelected === "All" ? `${color}` : "gray"}
@@ -159,28 +159,42 @@ export default function Projects({ color }) {
                 </Button>
               ))}
             </ButtonGroup>
-          </Center>
-          <SimpleGrid columns={[1, 2, 3]} px={4} spacing={4}>
-            {others
+          </Center> */}
+          <SimpleGrid columns={[1, 2]} px={4} spacing={4}>
+            {/* {others
               .filter((other) => {
                 if (otherSelected === "All") {
                   return true;
                 } else {
                   return other.tags.includes(otherSelected);
                 }
-              })
-              .map((other) => (
+              }) */}
+              {others.map((other) => (
                 <Fade bottom>
                   <Card key={other.name}>
                     <Stack>
                       <CardBody align="left" h={[null, "40vh"]}>
-                        <Heading size="sm">{other.name}</Heading>
-
+                        <SimpleGrid columns={[1, 2]} px={0.2} spacing={0.2}>
+                          <Flex align="center">
+                            <Image height="50px" objectFit="cover" src={other.image} />
+                            <Box ml={4}>
+                              <Heading size="sm" whiteSpace="nowrap">{other.name}</Heading>
+                            </Box>
+                          </Flex>
+                        </SimpleGrid>
                         <Text fontSize="sm" py={2}>
                           {other.description}
                         </Text>
-
-                        <HStack spacing={2}>
+                        <HStack py={2}>
+                            {other.buttons.map((button) => (
+                              <a key={button.text} href={button.href} target="_blank" rel="noopener noreferrer">
+                                <Button color={`${color}.400`}>
+                                  {button.text}
+                                </Button>
+                              </a>
+                            ))}
+                          </HStack>
+                        {/* <HStack spacing={2}>
                           {other.buttons.map((button) => (
                             <Link
                               key={button.text}
@@ -190,7 +204,7 @@ export default function Projects({ color }) {
                               {button.text}
                             </Link>
                           ))}
-                        </HStack>
+                        </HStack> */}
                         <HStack flexWrap="wrap" pt={4} spacing={2}>
                           {other.badges.map((badge) => (
                             <Badge
