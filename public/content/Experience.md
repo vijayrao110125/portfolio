@@ -18,7 +18,8 @@
 - List Items:
   - Served as a key full-stack developer, enhancing and maintaining the company’s HR software using Node.js and Java. Led both front-end and back-end developments, collaborating effectively within a cross-functional team to achieve a 20% improvement in application functionality and customer experience.
   - Designed and executed comprehensive unit testing scenarios using Java, leading to a 30% increase in code coverage. This initiative significantly enhanced the robustness and reliability of the codebase.
-  - Drove cross-functional collaboration by actively participating in ideation sessions, performing detailed market research, and supporting the formulation and execution of product strategies using insights developed through Java and Node.js applications.Contributed substantially to the development and implementation of strategies, boosting efficiency by 15%.
+  - Integrated and deployed APIs on AWS cloud via CI/CD pipelines, resulting in a 30% reduction in deployment time.
+  - Collaborated within cross-functional teams to prioritize code quality and integration in the MVC ecosystem, resulting in a 20% escalation in feature delivery rate.
 
 ## Darwinbox Digital Solutions PVT LTD
 - *Product Development Intern* | Jan'22 - May'22
