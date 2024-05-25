@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useState, useEffect }from 'react';
 import './App.css';
 import Nav from './components/NavBar';
 import Header from './components/Hero';
@@ -9,11 +9,32 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+//const colors = ["teal", "blue", "grey"];
+
+// const getColorForHour = (hour) => {
+//   const index = hour % colors.length;
+//   return colors[index];
+// };
+
+
 function App() {
   // Available Colours:
   // blue, cyan, gray, green, orange, pink, purple, red, teal, yellow
 
   // edit this variable to change the color theme
+  // const [color, setColor] = useState(getColorForHour(new Date().getHours()));
+
+  // useEffect(() => {
+  //   const updateColor = () => {
+  //     setColor(getColorForHour(new Date().getHours()));
+  //   };
+
+  //   // Update the color every hour
+  //   const intervalId = setInterval(updateColor, 3600000);
+
+  //   // Cleanup interval on component unmount
+  //   return () => clearInterval(intervalId);
+  // }, []);
   const color = "teal";
 
   return (
