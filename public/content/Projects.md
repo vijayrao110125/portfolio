@@ -7,10 +7,8 @@ Description
 - Buttons:
   - Link [https://github.com/vijayrao110125/GatorChefs]
 - Description1
-  - Developed a responsive web app using React.js and Node.js, boosting recipe documentation efficiency by 40% with automatic ingredient extraction via OpenAI, and utilizing MongoDB for scalable
-  user and recipe data storage, improving data management efficiency by 30%.
-  - Integrated OAuth for secure account creation and authentication, enhancing user security and accessibility by 25%, and implemented Cloudflare for image storage, reducing image load times by
-  15% and providing users with flexible options for uploading or generating images based on recipe details.
+  - Developed a responsive web app using React.js and Node.js, boosting recipe documentation efficiency by 40% with automatic ingredient extraction via OpenAI, and utilizing MongoDB for scalable user and recipe data storage, improving data management efficiency by 30%.
+  - Integrated OAuth for secure account creation and authentication, enhancing user security and accessibility by 25%, and implemented Cloudflare for image storage, reducing image load times by  15% and providing users with flexible options for uploading or generating images based on recipe details.
   - Integrated and deployed APIs on cloud via CI/CD pipelines, resulting in a 30% reduction in deployment time.
 
 ## Shopping Through Live Streaming
