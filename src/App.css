@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.stars-canvas {
+  position: fixed; /* Fix the canvas to the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  z-index: -1; /* Ensure it stays behind other content */
+  pointer-events: none; /* Ensure the canvas doesn't block interactions with the UI */
+}
+
+/* Ensure the foreground components are displayed over the background */
+.foreground {
+  position: relative;
+  z-index: 1; /* Ensure this is above the background */
+}

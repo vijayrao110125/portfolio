@@ -42,10 +42,10 @@ export default function Contact({ color }) {
           </Stack>
           <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
             <Heading fontSize={"3xl"}>Let's stay in touch!</Heading>
-            <Text color={"gray.600"} fontSize={"xl"} px={4}>
+            <Text onClick={linkedin} color={"gray.600"} fontSize={"xl"} px={4}>
               {profile.contact}
             </Text>
-            <Text color={`${color}.500`} fontWeight={600} fontSize={"lg"} px={4}>
+            <Text onClick={email} color={`${color}.500`} fontWeight={600} fontSize={"lg"} px={4}>
               {profile.email}
             </Text>
             <Center>

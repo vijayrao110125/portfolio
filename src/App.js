@@ -8,6 +8,7 @@ import Education from './components/Education';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import StarsCanvas from './canvas/stars';
 
 //const colors = ["teal", "blue", "grey"];
 
@@ -39,14 +40,18 @@ function App() {
 
   return (
     <>
-      <Nav color={color} />
-      <Header color={color} />
-      <About color={color} />
-      <Experience color={color} />
-      <Education color={color} />
-      <Projects color={color} />
-      <Contact color={color} />
-      <Footer />
+      
+       <StarsCanvas />
+      <div className="foreground">
+        <Nav color={color} />
+        <Header color={color} />
+        <About color={color} />
+        <Experience color={color} />
+        <Education color={color} />
+        <Projects color={color} />
+        <Contact color={color} />
+        <Footer />
+      </div>
     </>
   );
 }

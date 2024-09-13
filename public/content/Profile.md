@@ -2,7 +2,7 @@
 - Vijay's Portfolio
 
 ## Header
-- Hi, my name is Vijay. 
+- Vijay Thakkallapally 
 - I'm a Grad Student @ UFL
 
 ## About
