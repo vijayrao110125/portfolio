@@ -49,9 +49,9 @@ export default function Header({ color }) {
           pb={{ base: 20, md: 36 }}
           pt={{ base: 36, md: 52 }}
         >
-          <div style={{ position:'absolute',left: '5%',top:'5%',display: 'flex', justifyContent: 'flex-start',width: '20%',  height: 'auto' }}>
+          {/* <div style={{ position:'absolute',left: '5%',top:'5%',display: 'flex', justifyContent: 'flex-start',width: '20%',  height: 'auto' }}>
           <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDRxc3lwcWV4bnFrb2ZqdnNoeHFnODFpaXhpMjY2OXBmYmt3dGpheiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iDOOSqoC0k3VeT9rd5/giphy.gif" alt="Animated GIF" />
-          </div>
+          </div> */}
           <Heading
             fontWeight={600}
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
