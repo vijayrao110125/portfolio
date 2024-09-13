@@ -132,7 +132,7 @@ export default function Header({ color }) {
                 Click me!
               </Text>
             </Box>
-            <Box>
+            {/* <Box>
               <Icon
                 as={LeftArrow}
                 color={useColorModeValue("gray.800", "gray.300")}
@@ -151,8 +151,8 @@ export default function Header({ color }) {
               >
                 View me!
               </Text>
-            </Box>
-            <Box>
+            </Box> */}
+            {/* <Box>
               <Icon
                 as={RightArrow}
                 color={useColorModeValue("gray.800", "gray.300")}
@@ -171,7 +171,7 @@ export default function Header({ color }) {
               >
                 Say Hello!
               </Text>
-            </Box>
+            </Box> */}
           </Stack>
         </Stack>
       </Container>
