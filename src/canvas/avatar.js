@@ -11,16 +11,16 @@ const Avatar = () => {
       pupilRangeY = 15,
       mouseXStartPoint = 0,
       mouseXEndPoint = window.innerWidth,
-      currentXPosition = 0,
+      
       fracXValue = 0,
       mouseYEndPoint = window.innerHeight,
-      currentYPosition = 0,
+      
       fracYValue = 0,
       mouseXRange = mouseXEndPoint - mouseXStartPoint;
 
     const mouseMove = (e) => {
-      fracXValue = (currentXPosition = e.clientX - mouseXStartPoint) / mouseXRange;
-      fracYValue = (currentYPosition = e.clientY) / mouseYEndPoint;
+      fracXValue = ( e.clientX - mouseXStartPoint) / mouseXRange;
+      fracYValue = ( e.clientY) / mouseYEndPoint;
 
       let t = pupilStartPoint + fracXValue * pupilRangeX;
       let o = pupilStartPoint + fracYValue * pupilRangeY;
