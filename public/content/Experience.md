@@ -1,5 +1,5 @@
 ## University Of Florida
-- *Graduate Research Assistant* | Apr'23 - Present
+- *Software Engineer* | Apr'23 - Present
 - ![logo512](../assets/gator.jpeg)
 - Tags: Research
 - Badges:
@@ -10,7 +10,7 @@
   - Pioneered the implementation of innovative crop management strategies, leading to a 20% increase in agricultural yields by optimizing botanical characteristics tailored to specific environmental conditions.
 
 ## Darwinbox Digital Solutions PVT LTD
-- *Software Development Engineer* | May'22 - Nov'22
+- *Software Engineer* | May'22 - Nov'22
 - ![logo512](../assets/darwinbox.png)
 - Tags: Full Time
 - Badges:
@@ -22,7 +22,7 @@
   - Collaborated within cross-functional teams to prioritize code quality and integration in the MVC ecosystem, resulting in a 20% escalation in feature delivery rate.
 
 ## Darwinbox Digital Solutions PVT LTD
-- *Product Development Intern* | Jan'22 - May'22
+- *Software Development Intern* | Jan'22 - May'22
 - ![logo512](../assets/darwinbox.png)
 - Tags: Internship
 - Badges:

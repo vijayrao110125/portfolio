@@ -9,6 +9,8 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import StarsCanvas from './canvas/stars';
+import ComputersCanvas from './canvas/computer';
+
 
 //const colors = ["teal", "blue", "grey"];
 
@@ -44,7 +46,24 @@ function App() {
        <StarsCanvas />
       <div className="foreground">
         <Nav color={color} />
-        <Header color={color} />
+        {/* <div className="header-container relative">
+          <video
+            autoPlay
+            muted
+            loop
+            className="absolute top-0 left-0 w-full h-full object-cover opacity-50 -z-10"
+          >
+            <source src="/assets/skills-bg.webm" type="video/webm" />
+            <source src="/assets/skills-bg.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div> */}
+        <div className="header-container relative">
+          <div className="absolute inset-0 z-[-1] flex items-center justify-center">
+            <ComputersCanvas />
+          </div>
+          <Header color={color} />
+        </div>
         <About color={color} />
         <Experience color={color} />
         <Education color={color} />
