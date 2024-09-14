@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useState, useEffect } from 'react';
 import './App.css';
 import Nav from './components/NavBar';
 import Header from './components/Hero';
@@ -39,6 +39,24 @@ function App() {
   //   // Cleanup interval on component unmount
   //   return () => clearInterval(intervalId);
   // }, []);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 768px)'); // Desktop screen width
+    const handleMediaChange = (event) => {
+      setIsDesktop(event.matches);
+    };
+
+    // Attach the listener for screen size change
+    mediaQuery.addEventListener('change', handleMediaChange);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaChange);
+    };
+  }, []);
+
+
   const color = "teal";
 
   return (
@@ -47,9 +65,11 @@ function App() {
        <StarsCanvas />
       <div className="foreground">
         <Nav color={color} />
-        <div className="avatar-container">
-  <Avatar />
-</div>
+        {isDesktop && (
+          <div className="avatar-container">
+            <Avatar />
+          </div>
+        )}
         <div className="header-container relative">
           <div className="absolute inset-0 z-[-1] flex items-center justify-center">
             <ComputersCanvas />
