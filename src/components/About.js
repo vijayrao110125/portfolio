@@ -5,11 +5,13 @@ import {
   Container,
   Box,
   HStack,
+  useColorMode
 } from "@chakra-ui/react";
 import ProfileArray from "./ProfileArray";
 
 export default function About({ color }) {
   const profile = ProfileArray();
+  const { colorMode } = useColorMode();
     return (
       <>
         <Container maxW={"3xl"} id="about">
@@ -28,9 +30,12 @@ export default function About({ color }) {
               </HStack>
               <Divider orientation="horizontal" />
             </Stack>
-            <Text color={"gray.400"} fontSize={"xl"} px={4}>
+            {colorMode==='dark' ? <Text color={"gray.300"} fontSize={"xl"} px={4}>
               {profile.about}
-            </Text>
+            </Text> :<Text fontSize={"xl"} px={4}>
+              {profile.about}
+            </Text> }
+            
           </Stack>
         </Container>
       </>

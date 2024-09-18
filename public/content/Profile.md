@@ -14,4 +14,4 @@ I am Vijay Thakkallapally, a Master’s student in Computer Science at the Unive
 - Email: thakkallapallyv@gmail.com
 
 ## Logo
-- VT
+- VIJAY 

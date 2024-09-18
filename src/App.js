@@ -42,19 +42,18 @@ function App() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 768px)'); // Desktop screen width
+    const mediaQuery = window.matchMedia('(min-width: 768px)');
     const handleMediaChange = (event) => {
       setIsDesktop(event.matches);
     };
 
-    // Attach the listener for screen size change
     mediaQuery.addEventListener('change', handleMediaChange);
 
-    // Cleanup the event listener on component unmount
     return () => {
       mediaQuery.removeEventListener('change', handleMediaChange);
     };
   }, []);
+
 
 
   const color = "teal";
