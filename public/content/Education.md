@@ -12,7 +12,7 @@
 - ![logo512](../assets/VNR-logo.png)
 - Tags: Research
 - Badges:
-  - Batchelor's [blue]
+  - Bachelor's [blue]
 - List Items:
   - Database Management Systems, Data Structures and Algorithms,Computer Networks, Operating Systems, Machine Learning, Computer Security, Automata Theory, Computer Architecture principles, Java, C++.
 
