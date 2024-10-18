@@ -5,9 +5,10 @@
 - Badges:
   - Research [blue]
 - List Items:
-  - Led the development of advanced crop modeling techniques under Dr. Charlie Messina’s mentorship, utilizing sophisticated tools like Easy Pheno Optimizer and NelderMead Optimizer to refine predictive accuracy.
-  - Significantly enhanced crop yield predictions, achieving a 12% improvement in accuracy through advanced Python programming and comprehensive analysis of crop interactions with varying weather conditions and soil types.
-  - Pioneered the implementation of innovative crop management strategies, leading to a 20% increase in agricultural yields by optimizing botanical characteristics tailored to specific environmental conditions.
+  - Developed and deployed a robust architecture for selecting ideal chemicals to enhance plant growth, tailored to diverse environmental and soil conditions by utilizing genomic and phenotypic data.
+  - Utilized Python’s MPI and GPU acceleration via CUDA to accelerate parallel data processing, achieving a 40% reduction in computation time.
+  - Implemented advanced optimization algorithms, including Nelder-Mead, EasyPheno, and Particle Swarm Optimization, resulting in a 20% increase in precision and a 25% improvement in overall model performance.
+  - Analyzed and visualized chemical parameters using Python, R, Seaborn, and Tableau, enabling deeper insights and strengthening data driven research initiatives.
 
 ## Darwinbox Digital Solutions PVT LTD
 - *Software Engineer* | Jan'22 - Dec'22
@@ -28,5 +29,6 @@
 - Badges:
   - Internship [blue]
 - List Items:
-  - Played a pivotal role in product creation as a Product Development Specialist, actively engaged in every stage from concept to market launch. Designed initiatives that accelerated development timelines by 15%, through the implementation of innovative solutions.
-  - Gained extensive experience in software lifecycle management, leading efforts to enhance product features and ensure alignment with market demands. These strategic enhancements led to an increase 25% in efficiency and market competitiveness
+  - Played a pivotal role in product creation as a Product Development engineer, actively engaged in every stage from concept to market launch. Designed initiatives that accelerated development timelines by 15%, through the implementation of innovative solutions.
+  - Engaged collaboratively in an agile framework with cross-functional teams, actively participating in 100% of daily scrum sessions.
+  - Gained experience in software lifecycle management, leading efforts to enhance product features and ensure alignment with market demands. These strategic enhancements led to an increase 25% in efficiency and market competitiveness.
